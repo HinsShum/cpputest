@@ -167,6 +167,9 @@ extern "C"
     void* (*PlatformSpecificMemCpy)(void* s1, const void* s2, size_t size) = memcpy;
     void* (*PlatformSpecificMemset)(void*, int, size_t) = memset;
 
+    void (*PlatformSpecificSrand)(unsigned int) = srand;
+    int (*PlatformSpecificRand)(void) = rand;
+
     static int IsNanImplementation(double d)
     {
 #       ifdef __MICROLIB

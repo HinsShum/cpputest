@@ -36,7 +36,7 @@ SYS_INCLUDE_DIRS:=$(KEIL_DIR)/arm-none-eabi/include
 
 SRC_DIRS :=\
   $(CPPUTEST_HOME)/src/$(COMPONENT_NAME)\
-  $(CPPUTEST_HOME)/src/Platforms/armcc\
+  $(CPPUTEST_HOME)/src/Platforms/Keil\
 
 TARGET_PLATFORM :=gcc-arm-none-eabi_$(CPU)_$(CPU_MODE)
 CPPUTEST_USE_MEM_LEAK_DETECTION := N
